@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-i18n="meta.proc.title">Proces twórczy — Magdalena Sokołowska</title>
+<meta name="description" content="Między ciszą a obrazem — jak powstaje obraz olejny." data-i18n-attr="content:meta.proc.desc">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="js/tailwind-config.js"></script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-page="process">
+
+<header id="site-header" data-variant="solid"></header>
+
+<main class="pt-[72px]">
+
+  <section class="bg-sand relative overflow-hidden">
+    <div class="max-w-[1440px] mx-auto px-6 lg:px-12 py-14 lg:py-[72px]">
+      <div class="lg:px-[16px]">
+        <p class="text-[10px] tracking-[.22em] uppercase text-gold font-normal" data-i18n="proc.kicker">Proces twórczy</p>
+        <h1 class="mt-4 font-serif text-[40px] lg:text-[52px] leading-[1.05] font-normal text-ink" data-i18n="proc.title">Między ciszą a obrazem</h1>
+        <span class="block w-8 h-px bg-gold/70 mt-5"></span>
+        <p class="mt-5 text-[14px] leading-[1.8] text-ink/85 max-w-[560px]" data-i18n="proc.intro">
+          Każdy obraz powstaje powoli — od modlitwy i szkicu, przez kolejne warstwy koloru, aż po ostatnie pociągnięcie pędzla.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kroki: edytujesz w js/content.js (PROCESS), zdjęcia w images/process/ -->
+  <section class="bg-cream py-14 lg:py-20">
+    <div class="max-w-[1240px] mx-auto px-6 lg:px-12">
+      <div id="process-steps" class="space-y-16 lg:space-y-24"></div>
+    </div>
+  </section>
+
+  <section class="bg-sand">
+    <div class="max-w-[1440px] mx-auto px-6 lg:px-12 py-12 text-center">
+      <p class="font-serif text-[26px] text-ink" data-i18n="proc.cta.title">Zobacz, jak to wygląda na gotowych obrazach</p>
+      <p class="mt-2 text-[13px] text-muted" data-i18n="proc.cta.text">Wszystkie prace znajdziesz w galerii.</p>
+      <a href="galeria.html" class="btn mt-6" data-i18n="proc.cta.btn">Zobacz galerię</a>
+    </div>
+  </section>
+
+</main>
+
+<footer id="site-footer"></footer>
+
+<script src="js/works.js"></script>
+<script src="js/content.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/layout.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

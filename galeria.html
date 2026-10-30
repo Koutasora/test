@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-i18n="meta.gallery.title">Galeria — Magdalena Sokołowska</title>
+<meta name="description" content="Galeria obrazów Magdaleny Sokołowskiej — malarstwo olejne o tematyce sakralnej." data-i18n-attr="content:meta.gallery.desc">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="js/tailwind-config.js"></script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-page="gallery">
+
+<header id="site-header" data-variant="solid"></header>
+
+<main class="pt-[72px]">
+
+  <section class="bg-sand relative overflow-hidden">
+    <div class="max-w-[1440px] mx-auto px-6 lg:px-12 py-14 lg:py-[72px]">
+      <div class="lg:px-[16px]">
+        <p class="text-[10px] tracking-[.22em] uppercase text-gold font-normal" data-i18n="gal.kicker">Galeria</p>
+        <h1 class="mt-4 font-serif text-[40px] lg:text-[52px] leading-[1.05] font-normal text-ink" data-i18n="feat.title">Malowane z uważnością</h1>
+        <span class="block w-8 h-px bg-gold/70 mt-5"></span>
+        <p class="mt-5 text-[14px] leading-[1.8] text-ink/85 max-w-[520px]" data-i18n="gal.intro">
+          Wybór obrazów olejnych — światło, cisza i obecność zapisane kolorem. Kliknij obraz, aby zobaczyć go w powiększeniu.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-cream py-10 lg:py-14">
+    <div class="max-w-[1440px] mx-auto px-6 lg:px-12">
+      <div class="lg:px-[16px]">
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-10">
+          <div id="filters" class="filters" role="group" aria-label="Filtruj według kategorii" data-i18n-attr="aria-label:gal.filter"></div>
+          <p id="gallery-count" class="text-[11px] tracking-[.16em] uppercase text-muted" aria-live="polite"></p>
+        </div>
+
+        <div id="gallery" class="masonry" data-collection="works"></div>
+
+        <p id="gallery-empty" class="hidden text-center text-muted py-16 text-[14px]" data-i18n="gal.empty">Brak obrazów w tej kategorii.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-sand">
+    <div class="max-w-[1440px] mx-auto px-6 lg:px-12 py-12 text-center">
+      <p class="font-serif text-[26px] text-ink" data-i18n="gal.cta.title">Zainteresował Cię któryś z obrazów?</p>
+      <p class="mt-2 text-[13px] text-muted" data-i18n="gal.cta.text">Napisz — chętnie opowiem o jego historii i dostępności.</p>
+      <a href="#kontakt" class="btn mt-6" data-i18n="gal.cta.btn">Skontaktuj się</a>
+    </div>
+  </section>
+
+</main>
+
+<footer id="site-footer"></footer>
+
+<script src="js/works.js"></script>
+<script src="js/content.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/layout.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

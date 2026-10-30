@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-i18n="meta.home.title">Magdalena Sokołowska — Sztuka, która spotyka się z sacrum</title>
+<meta name="description" content="Magdalena Sokołowska — malarstwo, wiara, światło. Obrazy olejne o tematyce sakralnej." data-i18n-attr="content:meta.home.desc">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="js/tailwind-config.js"></script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-page="home">
+
+<header id="site-header" data-variant="overlay"></header>
+
+<main id="top">
+
+<!-- ============ HERO ============
+     Zdjęcie: wrzuć plik images/hero.jpg (najlepiej pionowy portret ok. 1600x1600 px) -->
+<section class="relative min-h-[640px] lg:h-[680px] bg-cream overflow-hidden">
+  <div class="slot fb-hero absolute inset-y-0 right-0 w-full lg:w-[68%]" style="--img:url('images/hero.jpg'); background-position:center top;" role="img" aria-label="Portret – malarstwo olejne" data-i18n-attr="aria-label:hero.alt"></div>
+  <div class="hero-fade-x absolute inset-0"></div>
+  <div class="hero-fade-y absolute inset-0"></div>
+
+  <!-- Social pionowo -->
+  <div class="hidden lg:flex absolute left-[20px] bottom-[28px] z-10 flex-col items-center gap-5 text-[9px] tracking-[.25em] text-ink">
+    <a href="https://www.facebook.com/madzia11223355" target="_blank" rel="noopener noreferrer" class="[writing-mode:vertical-rl] rotate-180 hover:text-gold transition-colors">FACEBOOK</a>
+    <span class="w-px h-5 bg-ink/40"></span>
+    <a href="https://www.instagram.com/art.magdalenasokolowska" target="_blank" rel="noopener noreferrer" class="[writing-mode:vertical-rl] rotate-180 hover:text-gold transition-colors">INSTAGRAM</a>
+    <a href="https://www.instagram.com/art.magdalenasokolowska" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="hover:text-gold transition-colors">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+    </a>
+  </div>
+
+  <div class="relative z-10 max-w-[1440px] mx-auto px-6 lg:px-12 pt-[130px] lg:pt-[82px] pb-20">
+    <div class="lg:pl-[40px] max-w-[460px]">
+      <h1 class="font-serif font-normal text-ink uppercase text-[44px] sm:text-[52px] lg:text-[56px] leading-[1.08] tracking-[.06em]">
+        Magdalena<br>Sokołowska
+      </h1>
+      <svg width="12" height="12" viewBox="0 0 12 12" class="text-gold mt-6"><path d="M6 0 L7 5 L12 6 L7 7 L6 12 L5 7 L0 6 L5 5 Z" fill="currentColor"/></svg>
+      <p class="mt-5 text-[11.5px] tracking-[.2em] uppercase text-gold font-normal" data-i18n="hero.tagline">Sztuka, która spotyka się z sacrum</p>
+      <p class="mt-6 text-[14px] leading-[1.75] text-ink/90 max-w-[300px]" data-i18n="hero.text">
+        Maluję światło, ciszę i obecność.<br>Moje obrazy są modlitwą zapisaną<br>kolorem i symbolem.
+      </p>
+      <a href="galeria.html" class="btn mt-8" data-i18n="hero.cta">Zobacz prace</a>
+    </div>
+  </div>
+
+  <a href="#prace" class="hidden lg:block absolute left-[230px] bottom-[16px] z-10 text-ink hover:text-gold transition-colors" aria-label="Przewiń w dół" data-i18n-attr="aria-label:hero.down">
+    <svg width="12" height="14" viewBox="0 0 12 14" fill="none" stroke="currentColor" stroke-width="1"><path d="M6 0v13M1 8l5 5 5-5"/></svg>
+  </a>
+</section>
+
+<!-- ============ WYBRANE PRACE (generowane z js/works.js, featured: true) ============ -->
+<section id="prace" class="bg-cream py-14 lg:py-16">
+  <div class="max-w-[1440px] mx-auto px-6 lg:px-12">
+    <div class="lg:px-[16px]">
+      <p class="text-[10px] tracking-[.22em] uppercase text-gold font-normal" data-i18n="feat.kicker">Wybrane prace</p>
+      <div class="mt-3 flex items-end justify-between gap-6 flex-wrap">
+        <h2 class="font-serif text-[30px] lg:text-[32px] text-ink font-normal leading-tight" data-i18n="feat.title">Malowane z uważnością</h2>
+        <a href="galeria.html" class="text-[10px] tracking-[.2em] uppercase text-gold hover:text-goldd transition-colors inline-flex items-center gap-2">
+          <span data-i18n="feat.all">Zobacz wszystkie prace</span> <span class="arrow">→</span>
+        </a>
+      </div>
+      <div id="featured-works" class="mt-9 grid grid-cols-2 lg:grid-cols-4 gap-x-5 lg:gap-x-[12px] gap-y-10"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ O MNIE ============
+     Zdjęcie: images/o-mnie.jpg -->
+<section id="o-mnie" class="bg-sand scroll-mt-[72px]">
+  <div class="grid lg:grid-cols-[43%_57%]">
+    <div class="slot fb-about min-h-[320px] lg:min-h-[400px]" style="--img:url('images/o-mnie.jpg')" role="img" aria-label="Artystka przy pracy w pracowni" data-i18n-attr="aria-label:about.alt"></div>
+
+    <div class="relative px-6 lg:px-[34px] py-12 lg:py-[46px] overflow-hidden">
+      <p class="text-[10px] tracking-[.22em] uppercase text-gold font-normal" data-i18n="about.kicker">O mnie</p>
+      <h2 class="mt-5 font-serif text-[28px] lg:text-[30px] font-normal text-ink" data-i18n="about.title">Tworzę z potrzeby duszy</h2>
+      <span class="block w-6 h-px bg-gold/70 mt-4"></span>
+
+      <div class="mt-5 text-[12.5px] leading-[1.85] text-ink/90 max-w-[360px] space-y-3 relative z-10">
+        <p data-i18n="about.p1">Nazywam się Magdalena Sokołowska.<br>Jestem artystką malarką.</p>
+        <p data-i18n="about.p2">W mojej twórczości łączę duchowość, symbolikę i piękno świateł. Każdy obraz powstaje z modlitwy, ciszy i zachwytu nad tajemnicą życia.</p>
+        <p data-i18n="about.p3">Wierzę, że sztuka może być przestrzenią spotkania – z drugim człowiekiem i z Tym, który jest Źródłem.</p>
+      </div>
+
+      <a href="o-mnie.html" class="btn mt-7 relative z-10" data-i18n="about.more">Czytaj więcej</a>
+
+      <svg class="absolute right-4 lg:right-[40px] top-1/2 -translate-y-1/2 h-[75%] w-auto text-gold/60 pointer-events-none hidden sm:block" viewBox="0 0 120 260" fill="none" stroke="currentColor" stroke-width=".8" aria-hidden="true">
+        <path d="M60 255 C58 190 62 120 70 20"/>
+        <path d="M62 200 C40 192 28 176 26 160 C46 164 60 180 62 200Z"/>
+        <path d="M63 170 C85 162 98 146 100 130 C80 134 65 150 63 170Z"/>
+        <path d="M64 140 C42 132 30 116 28 100 C48 104 62 120 64 140Z"/>
+        <path d="M66 112 C88 104 100 88 102 72 C82 76 68 92 66 112Z"/>
+        <path d="M68 84 C48 76 38 62 36 48 C54 52 66 66 68 84Z"/>
+        <path d="M70 56 C88 50 96 38 98 26 C82 30 72 42 70 56Z"/>
+        <path d="M70 22 C64 12 66 4 70 0 C76 6 76 14 70 22Z"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ============ KAFELKI ============
+     Zdjęcia (opcjonalnie): images/inspiracje.jpg, images/proces.jpg, images/wnetrze.jpg -->
+<section class="grid md:grid-cols-3">
+  <a href="inspiracje.html" class="tile relative block overflow-hidden bg-stone2 min-h-[190px] group">
+    <div class="slot fb-flower absolute inset-y-0 right-0 w-[60%] opacity-90" style="--img:url('images/inspiracje.jpg')"></div>
+    <div class="absolute inset-0 bg-gradient-to-r from-stone2 via-stone2/70 to-transparent"></div>
+    <div class="relative z-10 p-6 lg:p-[22px] h-full flex flex-col">
+      <p class="text-[9.5px] tracking-[.22em] uppercase text-gold font-normal" data-i18n="tile.insp.kicker">Inspiracje</p>
+      <h3 class="mt-3 font-serif text-[22px] leading-[1.15] text-ink" data-i18n="tile.insp.title">Światło, natura,<br>modlitwa</h3>
+      <span class="mt-auto pt-6 text-[9.5px] tracking-[.2em] uppercase text-gold group-hover:text-goldd inline-flex items-center gap-2"><span data-i18n="tile.more">Zobacz więcej</span> <span class="arrow">→</span></span>
+    </div>
+  </a>
+
+  <a href="proces.html" class="tile relative block overflow-hidden bg-stone2 min-h-[190px] group border-t md:border-t-0 md:border-l border-white/40">
+    <div class="slot fb-palette absolute inset-y-0 right-0 w-[70%]" style="--img:url('images/proces.jpg')"></div>
+    <svg class="absolute right-4 bottom-4 w-[150px] opacity-80" viewBox="0 0 160 40" fill="none" aria-hidden="true"><path d="M5 34 L120 14" stroke="#3b2a1f" stroke-width="5" stroke-linecap="round"/><path d="M118 12 L150 6 L146 16Z" fill="#b9a584"/></svg>
+    <div class="absolute inset-0 bg-gradient-to-r from-stone2 via-stone2/60 to-transparent"></div>
+    <div class="relative z-10 p-6 lg:p-[22px] h-full flex flex-col">
+      <p class="text-[9.5px] tracking-[.22em] uppercase text-gold font-normal" data-i18n="tile.proc.kicker">Proces twórczy</p>
+      <h3 class="mt-3 font-serif text-[22px] leading-[1.15] text-ink" data-i18n="tile.proc.title">Między ciszą a obrazem</h3>
+      <span class="mt-auto pt-6 text-[9.5px] tracking-[.2em] uppercase text-gold group-hover:text-goldd inline-flex items-center gap-2"><span data-i18n="tile.more">Zobacz więcej</span> <span class="arrow">→</span></span>
+    </div>
+  </a>
+
+  <a href="galeria.html" class="tile relative block overflow-hidden bg-[#D9CEBE] min-h-[190px] group border-t md:border-t-0 md:border-l border-white/40">
+    <div class="absolute right-[24px] top-[14px] w-[78px] h-[96px] bg-[#6b4a32] p-[3px] shadow-md">
+      <div class="slot fb-frame w-full h-full" style="--img:url('images/wnetrze.jpg')"></div>
+    </div>
+    <div class="absolute right-[40px] bottom-0 w-[110px] h-[48px] bg-[#e8dfd2] rounded-t-xl shadow-inner"></div>
+    <div class="absolute right-[30px] bottom-0 w-[16px] h-[40px] bg-[#e1d7c8] rounded-t-md"></div>
+    <div class="relative z-10 p-6 lg:p-[22px] h-full flex flex-col">
+      <p class="text-[9.5px] tracking-[.22em] uppercase text-gold font-normal" data-i18n="tile.space.kicker">Przestrzeń</p>
+      <h3 class="mt-3 font-serif text-[22px] leading-[1.15] text-ink" data-i18n="tile.space.title">Obrazy w Twoim<br>wnętrzu</h3>
+      <span class="mt-auto pt-6 text-[9.5px] tracking-[.2em] uppercase text-gold group-hover:text-goldd inline-flex items-center gap-2"><span data-i18n="tile.more">Zobacz więcej</span> <span class="arrow">→</span></span>
+    </div>
+  </a>
+</section>
+
+</main>
+
+<footer id="site-footer"></footer>
+
+<script src="js/works.js"></script>
+<script src="js/content.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/layout.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

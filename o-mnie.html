@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-i18n="meta.about.title">O mnie — Magdalena Sokołowska</title>
+<meta name="description" content="Magdalena Sokołowska — artystka malarka. Tworzę z potrzeby duszy." data-i18n-attr="content:meta.about.desc">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="js/tailwind-config.js"></script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-page="about">
+
+<header id="site-header" data-variant="solid"></header>
+
+<main id="about-page" class="pt-[72px]">
+
+  <!-- ============ WSTĘP: portret + opis ============
+       Zdjęcie: images/about/magdalena.jpg  |  Teksty: js/content.js (ABOUT.paragraphs) -->
+  <section class="bg-sand relative overflow-hidden">
+    <div class="grid lg:grid-cols-[42%_58%]">
+      <div class="slot fb-about min-h-[420px] lg:min-h-[620px]" style="--img:url('images/about/magdalena.jpg')" role="img" aria-label="Portret artystki" data-i18n-attr="aria-label:about.portrait.alt"></div>
+
+      <div class="relative px-6 lg:px-[64px] py-12 lg:py-[80px] flex flex-col justify-center overflow-hidden">
+        <p class="text-[10px] tracking-[.22em] uppercase text-gold font-normal" data-i18n="about.kicker">O mnie</p>
+        <h1 class="mt-5 font-serif text-[40px] lg:text-[52px] leading-[1.05] font-normal text-ink" data-i18n="about.title">Tworzę z potrzeby duszy</h1>
+        <span class="block w-8 h-px bg-gold/70 mt-5"></span>
+
+        <div id="about-text" class="mt-7 text-[14px] leading-[1.9] text-ink/90 max-w-[480px] space-y-4 relative z-10"></div>
+
+        <a href="#kontakt" class="btn mt-9 self-start relative z-10" data-i18n="foot.write">Napisz do mnie</a>
+
+        <svg class="absolute right-4 lg:right-[40px] top-1/2 -translate-y-1/2 h-[70%] w-auto text-gold/50 pointer-events-none hidden xl:block" viewBox="0 0 120 260" fill="none" stroke="currentColor" stroke-width=".8" aria-hidden="true">
+          <path d="M60 255 C58 190 62 120 70 20"/>
+          <path d="M62 200 C40 192 28 176 26 160 C46 164 60 180 62 200Z"/>
+          <path d="M63 170 C85 162 98 146 100 130 C80 134 65 150 63 170Z"/>
+          <path d="M64 140 C42 132 30 116 28 100 C48 104 62 120 64 140Z"/>
+          <path d="M66 112 C88 104 100 88 102 72 C82 76 68 92 66 112Z"/>
+          <path d="M68 84 C48 76 38 62 36 48 C54 52 66 66 68 84Z"/>
+          <path d="M70 56 C88 50 96 38 98 26 C82 30 72 42 70 56Z"/>
+          <path d="M70 22 C64 12 66 4 70 0 C76 6 76 14 70 22Z"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CYTAT (ABOUT.quote) ============ -->
+  <section id="about-quote-sec" class="bg-cream">
+    <div class="max-w-[900px] mx-auto px-6 py-16 lg:py-24 text-center">
+      <svg width="12" height="12" viewBox="0 0 12 12" class="text-gold mx-auto" aria-hidden="true"><path d="M6 0 L7 5 L12 6 L7 7 L6 12 L5 7 L0 6 L5 5 Z" fill="currentColor"/></svg>
+      <blockquote id="about-quote" class="mt-6 font-serif italic text-[30px] lg:text-[44px] leading-[1.25] text-ink"></blockquote>
+      <p id="about-quote-author" class="mt-6 text-[10.5px] tracking-[.22em] uppercase text-gold"></p>
+    </div>
+  </section>
+
+  <!-- ============ DROGA ARTYSTYCZNA + WYSTAWY (ABOUT.timeline, ABOUT.exhibitions) ============ -->
+  <section id="about-both-sec" class="bg-cream pb-16 lg:pb-24">
+    <div class="max-w-[1240px] mx-auto px-6 lg:px-12 grid lg:grid-cols-2 gap-14 lg:gap-24">
+      <div id="about-timeline-col">
+        <h2 class="font-serif text-[30px] text-ink font-normal" data-i18n="about.timeline">Droga artystyczna</h2>
+        <span class="block w-8 h-px bg-gold/70 mt-4 mb-9"></span>
+        <ol id="about-timeline" class="ml-[4px]"></ol>
+      </div>
+      <div id="about-exh-col">
+        <h2 class="font-serif text-[30px] text-ink font-normal" data-i18n="about.exh">Wystawy i publikacje</h2>
+        <span class="block w-8 h-px bg-gold/70 mt-4 mb-5"></span>
+        <ul id="about-exh" class="border-t border-gold/25"></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ Z PRACOWNI (ABOUT.studio) ============ -->
+  <section id="about-studio-sec" class="bg-sand py-14 lg:py-20">
+    <div class="max-w-[1240px] mx-auto px-6 lg:px-12">
+      <h2 class="font-serif text-[30px] text-ink font-normal" data-i18n="about.studio">Z pracowni</h2>
+      <span class="block w-8 h-px bg-gold/70 mt-4 mb-9"></span>
+      <div id="about-studio" class="grid grid-cols-1 sm:grid-cols-3 gap-6 lg:gap-8"></div>
+    </div>
+  </section>
+
+  <section class="bg-cream">
+    <div class="max-w-[1440px] mx-auto px-6 lg:px-12 py-12 text-center">
+      <p class="font-serif text-[26px] text-ink" data-i18n="about.cta.title">Chcesz porozmawiać o obrazie lub współpracy?</p>
+      <p class="mt-2 text-[13px] text-muted" data-i18n="about.cta.text">Napisz do mnie — odpowiem najszybciej, jak potrafię.</p>
+      <div class="mt-6 flex flex-wrap justify-center gap-4">
+        <a href="galeria.html" class="btn" data-i18n="insp.cta.btn">Zobacz galerię</a>
+        <a href="#kontakt" class="btn" data-i18n="foot.write">Napisz do mnie</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer id="site-footer"></footer>
+
+<script src="js/works.js"></script>
+<script src="js/content.js"></script>
+<script src="js/i18n.js"></script>
+<script src="js/layout.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
