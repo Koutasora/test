@@ -2,7 +2,7 @@ html { scroll-behavior: smooth; }
 body { background:#F7F2EA; color:#2B2622; font-family:'Jost',system-ui,sans-serif; font-weight:300; -webkit-font-smoothing:antialiased; }
 
 /* ---------- SLOTY NA OBRAZY (tło-gradient, jeśli brak zdjęcia) ----------
-   Aby wstawić zdjęcie: w HTML ustaw style="--img:url('images/nazwa.jpg')" */
+   Aby wstawić zdjęcie: w HTML ustaw style="--img:url('../images/nazwa.jpg')" */
 .slot {
   background-image: var(--img, linear-gradient(transparent, transparent)), var(--fallback);
   background-size: cover; background-position: center;
