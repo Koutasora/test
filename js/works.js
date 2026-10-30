@@ -27,7 +27,7 @@
 
    Kolejność w tej liście = kolejność w galerii.
 
-   Poniższe wpisy to PRZYKŁADY z obrazami zastępczymi (.svg) — zastąp je swoimi.
+   Poniższe wpisy to PRZYKŁADY z obrazami zastępczymi (.png) — zastąp je swoimi.
    ========================================================================== */
 
 window.WORKS = [
@@ -35,7 +35,7 @@ window.WORKS = [
     id: "w-ciszy",
     title: "W ciszy",
     title_en: "In silence",
-    image: "images/works/w-ciszy.svg",
+    image: "images/works/w-ciszy.png",
     technique: "olej na płótnie",
     size: "70x80 cm",
     year: 2025,
@@ -50,7 +50,7 @@ window.WORKS = [
     id: "oblicze",
     title: "Oblicze",
     title_en: "Face",
-    image: "images/works/oblicze.svg",
+    image: "images/works/oblicze.png",
     technique: "olej na płótnie",
     size: "70x70 cm",
     year: 2025,
@@ -64,7 +64,7 @@ window.WORKS = [
     id: "mloda-maryja-z-jezusem",
     title: "Młoda Maryja z Jezusem",
     title_en: "Young Mary with Jesus",
-    image: "images/works/mloda-maryja.svg",
+    image: "images/works/mloda-maryja.png",
     technique: "olej na płótnie",
     size: "60x80 cm",
     year: 2024,
@@ -78,7 +78,7 @@ window.WORKS = [
     id: "ciche-wolanie",
     title: "Ciche wołanie",
     title_en: "Quiet cry",
-    image: "images/works/ciche-wolanie.svg",
+    image: "images/works/ciche-wolanie.png",
     technique: "olej na płótnie",
     size: "70x70 cm",
     year: 2024,
@@ -92,7 +92,7 @@ window.WORKS = [
     id: "swiatlo-poranka",
     title: "Światło poranka",
     title_en: "Morning light",
-    image: "images/works/swiatlo-poranka.svg",
+    image: "images/works/swiatlo-poranka.png",
     technique: "olej na płótnie",
     size: "90x60 cm",
     year: 2023,
@@ -105,7 +105,7 @@ window.WORKS = [
     id: "matka",
     title: "Matka",
     title_en: "Mother",
-    image: "images/works/matka.svg",
+    image: "images/works/matka.png",
     technique: "olej na płótnie",
     size: "50x70 cm",
     year: 2023,
@@ -118,7 +118,7 @@ window.WORKS = [
     id: "adoracja",
     title: "Adoracja",
     title_en: "Adoration",
-    image: "images/works/adoracja.svg",
+    image: "images/works/adoracja.png",
     technique: "olej na płótnie",
     size: "60x60 cm",
     year: 2022,
@@ -131,7 +131,7 @@ window.WORKS = [
     id: "droga",
     title: "Droga",
     title_en: "The road",
-    image: "images/works/droga.svg",
+    image: "images/works/droga.png",
     technique: "olej na płótnie",
     size: "100x70 cm",
     year: 2022,

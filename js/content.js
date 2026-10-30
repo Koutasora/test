@@ -19,7 +19,7 @@ window.INSPIRATIONS = [
   {
     id: "poranne-swiatlo",
     title: "Poranne światło", title_en: "Morning light",
-    image: "images/inspirations/poranne-swiatlo.svg",
+    image: "images/inspirations/poranne-swiatlo.png",
     category: "Światło", ratio: "4/5",
     description: "Pierwsze promienie w pracowni — od nich zaczyna się dzień przy płótnie.",
     description_en: "The first rays in the studio — this is how the day at the canvas begins."
@@ -27,7 +27,7 @@ window.INSPIRATIONS = [
   {
     id: "pole-i-trawy",
     title: "Pole i trawy", title_en: "Field and grasses",
-    image: "images/inspirations/pole-i-trawy.svg",
+    image: "images/inspirations/pole-i-trawy.png",
     category: "Natura", ratio: "3/2",
     description: "Suche trawy i szerokie niebo uczą ciszy.",
     description_en: "Dry grasses and a wide sky teach silence."
@@ -35,7 +35,7 @@ window.INSPIRATIONS = [
   {
     id: "ciche-kwiaty",
     title: "Ciche kwiaty", title_en: "Quiet flowers",
-    image: "images/inspirations/ciche-kwiaty.svg",
+    image: "images/inspirations/ciche-kwiaty.png",
     category: "Natura", ratio: "1/1",
     description: "Delikatność, która nie potrzebuje słów.",
     description_en: "A delicacy that needs no words."
@@ -43,7 +43,7 @@ window.INSPIRATIONS = [
   {
     id: "kaplica",
     title: "Kaplica", title_en: "Chapel",
-    image: "images/inspirations/kaplica.svg",
+    image: "images/inspirations/kaplica.png",
     category: "Modlitwa", ratio: "4/5",
     description: "Miejsce, w którym światło staje się modlitwą.",
     description_en: "A place where light becomes prayer."
@@ -51,7 +51,7 @@ window.INSPIRATIONS = [
   {
     id: "swiece",
     title: "Świece", title_en: "Candles",
-    image: "images/inspirations/swiece.svg",
+    image: "images/inspirations/swiece.png",
     category: "Światło", ratio: "1/1",
     description: "Mały płomień, który prowadzi przez ciemność.",
     description_en: "A small flame that leads through the dark."
@@ -59,7 +59,7 @@ window.INSPIRATIONS = [
   {
     id: "ikona-i-symbol",
     title: "Ikona i symbol", title_en: "Icon and symbol",
-    image: "images/inspirations/ikona-i-symbol.svg",
+    image: "images/inspirations/ikona-i-symbol.png",
     category: "Modlitwa", ratio: "3/4",
     description: "Symbol mówi więcej, niż potrafi opis.",
     description_en: "A symbol says more than a description can."
@@ -70,25 +70,25 @@ window.INSPIRATIONS = [
 window.PROCESS = [
   {
     title: "Cisza i szkic", title_en: "Silence and sketch",
-    image: "images/process/krok-1.svg",
+    image: "images/process/krok-1.png",
     description: "Zaczynam od modlitwy i ciszy. Pierwszy szkic powstaje węglem — szukam kompozycji i miejsca, z którego wypłynie światło.",
     description_en: "I begin with prayer and silence. The first sketch is made in charcoal — I look for the composition and the place from which the light will flow."
   },
   {
     title: "Podmalówka", title_en: "Underpainting",
-    image: "images/process/krok-2.svg",
+    image: "images/process/krok-2.png",
     description: "Cienkie, przezroczyste warstwy wyznaczają ton i nastrój obrazu. Jeszcze nie ma szczegółów — jest kierunek.",
     description_en: "Thin, transparent layers set the tone and mood of the painting. There are no details yet — only direction."
   },
   {
     title: "Warstwy koloru i światła", title_en: "Layers of colour and light",
-    image: "images/process/krok-3.svg",
+    image: "images/process/krok-3.png",
     description: "Stopniowo buduję kolor i światło. Każda warstwa musi wyschnąć, zanim pojawi się następna — to nauka cierpliwości.",
     description_en: "I gradually build colour and light. Each layer must dry before the next appears — it is a lesson in patience."
   },
   {
     title: "Ostatnie pociągnięcie", title_en: "The last brushstroke",
-    image: "images/process/krok-4.svg",
+    image: "images/process/krok-4.png",
     description: "Wykończenie i lakierowanie. Obraz odpoczywa, a ja patrzę, czy jest już taki, jaki ma być.",
     description_en: "Finishing and varnishing. The painting rests, and I look to see whether it is what it is meant to be."
   }
@@ -166,8 +166,8 @@ window.ABOUT = {
   ],
 
   studio: [
-    { image: "images/about/pracownia-1.svg", caption: "Pracownia", caption_en: "The studio" },
-    { image: "images/about/pracownia-2.svg", caption: "Pędzle i farby", caption_en: "Brushes and paints" },
-    { image: "images/about/pracownia-3.svg", caption: "Obraz w trakcie powstawania", caption_en: "A painting in progress" }
+    { image: "images/about/pracownia-1.png", caption: "Pracownia", caption_en: "The studio" },
+    { image: "images/about/pracownia-2.png", caption: "Pędzle i farby", caption_en: "Brushes and paints" },
+    { image: "images/about/pracownia-3.png", caption: "Obraz w trakcie powstawania", caption_en: "A painting in progress" }
   ]
 };
